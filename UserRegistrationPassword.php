@@ -150,7 +150,7 @@ class UserRegistrationPassword extends ControllerBase {
           drupal_set_message(t('You have just used your one-time login link. Your account is now active and you are authenticated.'));
 
           // Redirect to user.
-          $route_name = 'entity.user.canonical';
+          $route_name = 'entity.user.edit_form';
           $route_options = ['user' => $account->id()];
         }
         // Something else is wrong, redirect to the password
